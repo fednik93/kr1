@@ -229,3 +229,190 @@
     line-height: 1.5;
     text-align: left; /* Описание тоже влево */
   }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px; /* Отступы между элементами по горизонтали и вертикали */
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .service-card {
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    background-size: cover; /* Масштабирование фона */
+    background-position: center center; /* Центрируем фон */
+  }
+
+  .service-card.green {
+    background: rgba(73, 105, 55, 1); /* Зеленый фон */
+  }
+
+  .service-card.oran {
+    background-color: #e1562b; /* Ярко оранжевый фон */
+  }
+
+  .service-card.image {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .service-card.large-image {
+    grid-column: span 2; /* Растягивает на два столбца */
+    height: 100%; /* Карточка растягивается на всю высоту */
+    background-size: cover; /* Изображение растягивается на всю карточку */
+    background-position: center center; /* Центрирование изображения */
+  }
+
+  .service-card.small {
+    grid-column: span 1; /* Один столбец */
+  }
+
+  .service-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Иконки будут масштабироваться внутри карточки */
+  }
+
+  .service-card.large-image img {
+    display: none; /* Скрыть изображение внутри карточки, если используется фоновое изображение */
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .label {
+    background: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-family: "Onest", sans-serif;
+  }
+
+  .italic {
+    font-family: "Gogol", cursive;
+    font-style: italic;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+  .service-card.large-image {
+    grid-column: span 2; /* Растягивает на два столбца */
+    height: 100%; /* Карточка растягивается на всю высоту */
+    background-size: cover; /* Изображение растягивается на всю карточку */
+    background-position: center center; /* Центрирование изображения */
+    overflow: hidden; /* Обрезаем все, что выходит за пределы карточки */
+  }
+  
+  .service-card.large-image img {
+    display: none; /* Скрыть изображение внутри карточки, если используется фоновое изображение */
+  }
+  
+  /* Дополнительная настройка для корректного обрезания */
+  .service-card.large-image {
+    position: relative;
+  }
+  
+  .service-card.large-image::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px; /* Обрезаем 30px снизу */
+    background: rgba(73,105,55,1); /* Применяем белый фон для скрытия части изображения */
+  }
+  .call-doctor-container {
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .call-doctor-image {
+    width: 70%; /* Уменьшил размер картинки */
+    height: auto;
+    position: absolute;
+    top: 500px; /* Сдвиг картинки на 500 пикселей ниже */
+    left: 50%;
+    transform: translateX(-50%); /* Центрирование картинки */
+  }
+  
+  .call-doctor-form {
+    position: absolute;
+    bottom: -1100px;
+    left: 66%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .call-doctor-form h2 {
+    font-family: "Onest", sans-serif;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .call-doctor-form p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .call-doctor-form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  .call-doctor-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .submit-button {
+    background-color: rgba(111, 140, 95, 1);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    font-family: "Onest", sans-serif;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .submit-button:hover {
+    background-color: rgba(111, 140, 95, 0.8);
+  }
+  
