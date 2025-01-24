@@ -415,4 +415,77 @@
   .submit-button:hover {
     background-color: rgba(111, 140, 95, 0.8);
   }
-  
+  .services-section {
+    width: 100%; 
+    color:aliceblue;
+    margin: 50px 0; /* Добавляет отступы сверху и снизу */
+    position: relative;
+    top: 4500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services-grid_2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Чтобы карточки не слипались */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.service-card_2 {
+  width: 300px; /* Ширина карточки */
+  height: 300px; /* Высота карточки (для квадратной формы) */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  background-size: cover; /* Масштабирование фона */
+  background-position: center center; /* Цвет текста, если картинка темная */
+  align-items: flex-end; /* Устанавливаем элементы снизу */
+  justify-content: flex-start; /* Устанавливаем элементы слева */
+}
+.img_cont {
+  position: absolute; /* Позволяет свободно перемещать иконки */
+  top: 20px; /* Отступ сверху */
+  left: 12px; /* Отступ слева */
+  width: 20%;
+}
+.all-services-button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+}
+.carousel-buttons_2 {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  right: -50px; /* Сместил правее */
+  top: 20px; /* Опустил ниже */
+}
+.top-controls_2 {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 4550px; /* Опустил вниз */
+  right: -50px;
+}
+.promo-button_2 {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: "Onest", sans-serif;
+  cursor: pointer;
+}
