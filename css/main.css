@@ -319,13 +319,6 @@
     width: 40px;
     height: 40px;
   }
-  .service-card.large-image {
-    grid-column: span 2; /* Растягивает на два столбца */
-    height: 100%; /* Карточка растягивается на всю высоту */
-    background-size: cover; /* Изображение растягивается на всю карточку */
-    background-position: center center; /* Центрирование изображения */
-    overflow: hidden; /* Обрезаем все, что выходит за пределы карточки */
-  }
   
   .service-card.large-image img {
     display: none; /* Скрыть изображение внутри карточки, если используется фоновое изображение */
@@ -342,7 +335,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 30px; /* Обрезаем 30px снизу */
+    height: 40px; /* Обрезаем 30px снизу */
     background: rgba(73,105,55,1); /* Применяем белый фон для скрытия части изображения */
   }
   .call-doctor-container {
@@ -355,14 +348,14 @@
     width: 70%; /* Уменьшил размер картинки */
     height: auto;
     position: absolute;
-    top: 500px; /* Сдвиг картинки на 500 пикселей ниже */
+    top: 100px; /* Сдвиг картинки на 500 пикселей ниже */
     left: 50%;
     transform: translateX(-50%); /* Центрирование картинки */
   }
   
   .call-doctor-form {
     position: absolute;
-    bottom: -1100px;
+    bottom: -700px;
     left: 66%;
     transform: translateX(-50%);
     background-color: rgba(255, 255, 255, 0.8);
@@ -420,7 +413,7 @@
     color:aliceblue;
     margin: 50px 0; /* Добавляет отступы сверху и снизу */
     position: relative;
-    top: 4500px;
+    top: 4300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -476,7 +469,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  top: 4550px; /* Опустил вниз */
+  top: 4350px; /* Опустил вниз */
   right: -50px;
 }
 .promo-button_2 {
@@ -488,4 +481,67 @@
   font-size: 14px;
   font-family: "Onest", sans-serif;
   cursor: pointer;
+}
+.promo-button_3 {
+  position: relative;
+  top: 4500px;
+  left: 40px;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: "Onest", sans-serif;
+  cursor: pointer;
+}
+.services-section_3 {
+  width: 100%; 
+  color:aliceblue;
+  margin: 50px 0; /* Добавляет отступы сверху и снизу */
+  position: relative;
+  top: 4500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services-grid_3 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Чтобы карточки не слипались */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.service-card_3 {
+width: 300px; /* Ширина карточки */
+height: 400px; /* Высота карточки (для квадратной формы) */
+color: white;
+padding: 20px;
+border-radius: 10px;
+position: relative;
+display: flex;
+background-size: cover; /* Масштабирование фона */
+background-position: center center; /* Цвет текста, если картинка темная */
+align-items: flex-end; /* Устанавливаем элементы снизу */
+justify-content: flex-start; /* Устанавливаем элементы слева */
+}
+.text-karto4ki {
+  display: flex;
+  flex-direction: column; /* Добавляем колонное направление */
+  position: relative;
+  align-items: flex-start; /* Выравнивание по левому краю */
+  justify-content: flex-end;
+  margin: 30px;
+}
+.tem {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.35);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start; /* Устанавливаем элементы слева */
+  align-items: flex-end; /* Устанавливаем элементы снизу */
 }
